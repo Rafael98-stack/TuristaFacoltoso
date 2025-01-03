@@ -44,6 +44,10 @@ public abstract class Persona {
         this.indirizzo = indirizzo;
     }
 
+    public int getId() {
+        return id;
+    }
+
     @Override
     public String toString() {
         return "Persona{" +
