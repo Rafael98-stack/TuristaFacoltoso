@@ -5,7 +5,7 @@ public abstract class Persona {
     private String nome,cognome,email,indirizzo;
 
     public Persona(int id, String nome, String cognome, String email, String indirizzo) {
-        this.id = id;
+        this.id = idTot++;
         this.nome = nome;
         this.cognome = cognome;
         this.email = email;
