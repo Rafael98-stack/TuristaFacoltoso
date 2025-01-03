@@ -4,7 +4,7 @@ public abstract class Persona {
     private int id;
     private String nome,cognome,email,indirizzo;
 
-    public Persona(int id, String nome, String cognome, String email, String indirizzo) {
+    public Persona(String nome, String cognome, String email, String indirizzo) {
         this.id = idTot++;
         this.nome = nome;
         this.cognome = cognome;

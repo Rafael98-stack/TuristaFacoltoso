@@ -5,8 +5,8 @@ public class Host extends Persona {
     private Integer codiceHost;
     private Boolean isSuperHost;
 
-    public Host(int id, String nome, String cognome, String email, String indirizzo, Integer codiceHost, Boolean isSuperHost) {
-        super(id, nome, cognome, email, indirizzo);
+    public Host(String nome, String cognome, String email, String indirizzo, Integer codiceHost, Boolean isSuperHost) {
+        super(nome, cognome, email, indirizzo);
         this.codiceHost = codiceHostTot++;
         this.isSuperHost = isSuperHost;
     }
