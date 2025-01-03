@@ -12,8 +12,8 @@ public class Prenotazione {
     private Abitazione abitazione;
     private User user;
 
-    public Prenotazione(int id, LocalDateTime start, LocalDateTime end, Abitazione abitazione, User user) {
-        this.id = id;
+    public Prenotazione(LocalDateTime start, LocalDateTime end, Abitazione abitazione, User user) {
+        this.id = ++idTot;
         this.start = start;
         this.end = end;
         this.abitazione = abitazione;

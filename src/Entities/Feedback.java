@@ -8,7 +8,7 @@ public class Feedback {
     private String testo;
     private Integer punteggio;
 
-    public Feedback(Integer id, String titolo, String testo, Integer punteggio) {
+    public Feedback(String titolo, String testo, Integer punteggio) {
         this.id = ++idTot;
         this.titolo = titolo;
         this.testo = testo;
