@@ -1,25 +1,28 @@
 package Entities;
 
 public class Host extends Persona {
-private static int  idTot = 0;
-private int id;
+    private Integer codiceHost;
+    private Boolean isSuperHost;
 
-    public Host(String nome, String cognome, String email, String indirizzo) {
-        super(nome, cognome, email, indirizzo);
-        this.id=++idTot;
+    public Host(int id, String nome, String cognome, String email, String indirizzo, Integer codiceHost, Boolean isSuperHost) {
+        super(id, nome, cognome, email, indirizzo);
+        this.codiceHost = codiceHost;
+        this.isSuperHost = isSuperHost;
     }
 
-    public int getId() {
-        return id;
+    public Boolean getSuperHost() {
+        return isSuperHost;
     }
-    @Override
-    public String toString() {
-        return "Host{" +
-                "id='" + getNome() + '\'' +
-                "nome='" + super.getNome() + '\'' +
-                ", cognome='" + super.getCognome() + '\'' +
-                ", email='" + super.getEmail() + '\'' +
-                ", indirizzo='" + super.getIndirizzo() + '\'' +
-                '}';
+
+    public void setSuperHost(Boolean isSuperHost) {
+        this.isSuperHost = isSuperHost;
+    }
+
+    public Integer getCodiceHost() {
+        return codiceHost;
+    }
+
+    public void setCodiceHost(Integer codiceHost) {
+        this.codiceHost = codiceHost;
     }
 }

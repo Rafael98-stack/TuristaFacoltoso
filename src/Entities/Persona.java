@@ -1,8 +1,11 @@
 package Entities;
 public abstract class Persona {
+    private static int  idTot = 0;
+    private int id;
     private String nome,cognome,email,indirizzo;
 
-    public Persona(String nome, String cognome, String email, String indirizzo) {
+    public Persona(int id, String nome, String cognome, String email, String indirizzo) {
+        this.id = id;
         this.nome = nome;
         this.cognome = cognome;
         this.email = email;
@@ -43,8 +46,9 @@ public abstract class Persona {
 
     @Override
     public String toString() {
-        return "Utente{" +
-                "nome='" + nome + '\'' +
+        return "Persona{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
                 ", cognome='" + cognome + '\'' +
                 ", email='" + email + '\'' +
                 ", indirizzo='" + indirizzo + '\'' +
