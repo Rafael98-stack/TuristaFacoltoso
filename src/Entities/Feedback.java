@@ -12,7 +12,7 @@ public class Feedback {
         this.id = ++idTot;
         this.titolo = titolo;
         this.testo = testo;
-        if (punteggio < 0 || punteggio > 5) throw new IllegalArgumentException("Il punteggio deve essere tra 0 e 5 stelle");
+        if (punteggio < 1 || punteggio > 5) throw new IllegalArgumentException("Il punteggio deve essere tra 0 e 5 stelle");
         this.punteggio = punteggio;
     }
 
