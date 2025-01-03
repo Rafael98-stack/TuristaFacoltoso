@@ -25,4 +25,9 @@ public class PrenotazioneService {
         prenotazioneDAO.removeById(id);
         System.out.println("Rimozione effettuata.");
     }
+
+    public void getLastPrenotazioneByUser(int id){
+        prenotazioneDAO.getLastPrenotazioneByUtente(id);
+        System.out.println("L'ultima prenotazione di " + prenotazioneDAO.getLastPrenotazioneByUtente(id).getUser() + " è " + prenotazioneDAO.getLastPrenotazioneByUtente(id));
+    }
 }

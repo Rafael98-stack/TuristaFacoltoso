@@ -22,4 +22,14 @@ public class PrenotazioneDAO {
     public void removeById(int id){
         prenotazioni.remove(id);
     }
+
+    public Prenotazione getLastPrenotazioneByUtente(int id){
+        Prenotazione risultato = null;
+        for (Prenotazione prenotazione : prenotazioni.values()){
+            if (prenotazione.getUser().getId() == id && prenotazione.getStart().isAfter(risultato.getStart())) {
+                risultato = prenotazione;
+            }
+        }
+        return risultato;
+    }
 }
