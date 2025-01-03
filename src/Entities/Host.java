@@ -3,13 +3,12 @@ package Entities;
 public class Host extends Persona {
     private static int  codiceHostTot = 0;
     private Integer codiceHost;
-    private Boolean isSuperHost;
+    private Boolean isSuperHost = false;
 
 
-    public Host(String nome, String cognome, String email, String indirizzo, Integer codiceHost, Boolean isSuperHost) {
+    public Host(String nome, String cognome, String email, String indirizzo) {
         super(nome, cognome, email, indirizzo);
         this.codiceHost = codiceHostTot++;
-        this.isSuperHost = isSuperHost;
     }
 
     public Boolean getSuperHost() {
