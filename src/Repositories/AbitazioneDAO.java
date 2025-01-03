@@ -29,4 +29,9 @@ public class AbitazioneDAO {
    public void addAbitazione(Abitazione abitazione){
        abitazioni.put(abitazione.getId(),abitazione);
    }
+
+   // Metodo per rimuovere una Abitazione dal "Database".
+   public void removeAbitazioneById(int id){
+       abitazioni.remove(id);
+   }
 }
