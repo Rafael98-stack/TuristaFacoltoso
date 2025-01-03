@@ -1,8 +1,8 @@
 package Entities;
-public abstract class Utente {
+public abstract class Persona {
     private String nome,cognome,email,indirizzo;
 
-    public Utente(String nome, String cognome, String email, String indirizzo) {
+    public Persona(String nome, String cognome, String email, String indirizzo) {
         this.nome = nome;
         this.cognome = cognome;
         this.email = email;

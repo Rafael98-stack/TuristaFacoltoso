@@ -1,6 +1,6 @@
 package Entities;
 
-public class Host extends Utente{
+public class Host extends Persona {
 private static int  idTot = 0;
 private int id;
 
