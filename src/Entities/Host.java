@@ -2,7 +2,7 @@ package Entities;
 
 public class Host extends Utente{
 private static int  idTot = 0;
-private int id;
+private Integer id;
 
     public Host(String nome, String cognome, String email, String indirizzo) {
         super(nome, cognome, email, indirizzo);

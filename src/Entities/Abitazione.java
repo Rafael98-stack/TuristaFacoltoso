@@ -2,7 +2,7 @@ package Entities;
 
 public class Abitazione {
 private static int idTot = 0;
-    private int id;
+    private Integer id;
     private String nome,indirizzo;
     private int locali,letti,piano;
 
