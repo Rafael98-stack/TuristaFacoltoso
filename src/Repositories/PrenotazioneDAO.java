@@ -26,7 +26,7 @@ public class PrenotazioneDAO {
     public Prenotazione getLastPrenotazioneByUtente(int id){
         Prenotazione risultato = null;
         for (Prenotazione prenotazione : prenotazioni.values()){
-            if (prenotazione.getUser().getId() == id && prenotazione.getStart().isAfter(risultato.getStart())) {
+            if (prenotazione.getUser().getId() == id && (risultato == null || prenotazione.getStart().isAfter(risultato.getStart()))) {
                 risultato = prenotazione;
             }
         }

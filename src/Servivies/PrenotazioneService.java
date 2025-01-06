@@ -28,6 +28,6 @@ public class PrenotazioneService {
 
     public void getLastPrenotazioneByUser(int id){
         prenotazioneDAO.getLastPrenotazioneByUtente(id);
-        System.out.println("L'ultima prenotazione di " + prenotazioneDAO.getLastPrenotazioneByUtente(id).getUser() + " è " + prenotazioneDAO.getLastPrenotazioneByUtente(id));
+        System.out.println("L'ultima prenotazione di " + prenotazioneDAO.getLastPrenotazioneByUtente(id).getUser().getNome() + " è " + prenotazioneDAO.getLastPrenotazioneByUtente(id));
     }
 }

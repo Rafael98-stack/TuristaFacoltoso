@@ -26,6 +26,15 @@ public class AbitazioneDAO {
        }
        return null;
    }
+
+   public int mediaPostiLetto(){
+       int risultato = 0;
+       for (Abitazione abitazione : abitazioni.values()){
+           risultato += abitazione.getLetti();
+       }
+       return risultato / abitazioni.size();
+   }
+
    public void addAbitazione(Abitazione abitazione){
        abitazioni.put(abitazione.getId(),abitazione);
    }

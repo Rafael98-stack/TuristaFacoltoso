@@ -17,6 +17,10 @@ abitazioneDAO.removeAbitazioneById(id);
         System.out.println("Rimozione effettuata.");
     }
 
+    public void mediaPostiLetto(){
+        System.out.println("La media dei posti letto di tutte le abitazioni è " + abitazioneDAO.mediaPostiLetto());
+    }
+
     // Ritorna un oggetto abitazione
     public Abitazione getAbitazioneById(int id){
         return abitazioneDAO.getAbitazione(id);
